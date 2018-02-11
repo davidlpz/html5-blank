@@ -1,0 +1,25 @@
+﻿@import '_reset'
+
+.preload *
+	transition: none !important
+
+%clearfix
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+%hidden
+	opacity: 0
+	visibility: hidden
+
+%visible
+	opacity: 1
+	visibility: visible
+
+%transitionFade
+	transition: opacity .2s linear, visibility .2s linear
+
+.selection
+	color: white
+	background: blue
